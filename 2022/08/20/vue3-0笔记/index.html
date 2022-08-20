@@ -25,7 +25,7 @@
   <link rel="stylesheet" type="text/css" href="/./style/main.css">
 	<link rel="shortcut icon" href="/favicon.ico" title="Favicon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-	<title>Hexo</title>
+	<title>vue3.0笔记</title>
   
   <script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?awwssw1snsnsnn1ndndnndnd99j";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s);})();
   </script>
@@ -46,15 +46,21 @@
 <main>
   <div class="article-title">
     
+  
+  <h1 class="title">
+    vue3.0笔记
+  </h1>
+  
+
 
     <ul class="article-info">
       <li>
         发布
-        <time datetime="2022-08-20T09:35:44.750Z" itemprop="datePublished">2022-08-20</time>
+        <time datetime="2022-08-20T10:03:58.000Z" itemprop="datePublished">2022-08-20</time>
       </li>
       <li>
         
-    更新 <time datetime="2022-07-24T03:18:40.196Z" itemprop="dateUpdated">2022-07-24</time>
+    更新 <time datetime="2022-08-20T10:04:33.446Z" itemprop="dateUpdated">2022-08-20</time>
 
       </li>
       <li id="busuanzi_container_page_pv">
@@ -194,10 +200,14 @@
 </li>
 </ul>
 <h3 id="Vue3-0的响应式"><a href="#Vue3-0的响应式" class="headerlink" title="Vue3.0的响应式"></a>Vue3.0的响应式</h3><ul>
-<li>实现原理:<ul>
-<li>通过Proxy（代理）:  拦截对象中任意属性的变化, 包括：属性值的读写、属性的添加、属性的删除等。</li>
-<li>通过Reflect（反射）:  对源对象的属性进行操作。</li>
-<li>MDN文档中描述的Proxy与Reflect：<ul>
+<li><p>实现原理:</p>
+<ul>
+<li><p>通过Proxy（代理）:  拦截对象中任意属性的变化, 包括：属性值的读写、属性的添加、属性的删除等。</p>
+</li>
+<li><p>通过Reflect（反射）:  对源对象的属性进行操作。</p>
+</li>
+<li><p>MDN文档中描述的Proxy与Reflect：</p>
+<ul>
 <li><p>Proxy：<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Proxy">https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Proxy</a></p>
 </li>
 <li><p>Reflect：<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Reflect">https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Reflect</a></p>
@@ -422,6 +432,7 @@
 
 
 
+
 <h2 id="2-Composition-API-的优势"><a href="#2-Composition-API-的优势" class="headerlink" title="2.Composition API 的优势"></a>2.Composition API 的优势</h2><p>我们可以更加优雅的组织我们的代码，函数。让相关功能的代码更加有序的组织在一起。</p>
 <div style="width:500px;height:340px;overflow:hidden;float:left">
     <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bc0be8211fc54b6c941c036791ba4efe~tplv-k3u1fbpfcp-watermark.image"style="height:360px"/>
@@ -429,6 +440,7 @@
 <div style="width:430px;height:340px;overflow:hidden;float:left">
     <img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6cc55165c0e34069a75fe36f8712eb80~tplv-k3u1fbpfcp-watermark.image"style="height:360px"/>
 </div>
+
 
 
 
@@ -465,7 +477,42 @@
 <li><p>Vue3.0中对这些API做出了调整：</p>
 <ul>
 <li><p>将全局的API，即：<code>Vue.xxx</code>调整到应用实例（<code>app</code>）上</p>
-<p>| 2.x 全局 API（<code>Vue</code>） | 3.x 实例 API (<code>app</code>)                        |<br>      | ————————- | ——————————————- |<br>| Vue.config.xxxx           | app.config.xxxx                             |<br>| Vue.config.productionTip  | <strong style="color:#DD5145">移除</strong> |<br>| Vue.component             | app.component                               |<br>| Vue.directive             | app.directive                               |<br>| Vue.mixin                 | app.mixin                                   |<br>| Vue.use                   | app.use                                     |<br>| Vue.prototype             | app.config.globalProperties                 |</p>
+<table>
+<thead>
+<tr>
+<th>2.x 全局 API（<code>Vue</code>）</th>
+<th>3.x 实例 API (<code>app</code>)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Vue.config.xxxx</td>
+<td>app.config.xxxx</td>
+</tr>
+<tr>
+<td>Vue.config.productionTip</td>
+<td><strong style="color:#DD5145">移除</strong></td>
+</tr>
+<tr>
+<td>Vue.component</td>
+<td>app.component</td>
+</tr>
+<tr>
+<td>Vue.directive</td>
+<td>app.directive</td>
+</tr>
+<tr>
+<td>Vue.mixin</td>
+<td>app.mixin</td>
+</tr>
+<tr>
+<td>Vue.use</td>
+<td>app.use</td>
+</tr>
+<tr>
+<td>Vue.prototype</td>
+<td>app.config.globalProperties</td>
+</tr>
+</tbody></table>
 </li>
 </ul>
 </li>
