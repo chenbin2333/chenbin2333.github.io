@@ -60,7 +60,7 @@
       </li>
       <li>
         
-    更新 <time datetime="2022-08-20T10:04:33.446Z" itemprop="dateUpdated">2022-08-20</time>
+    更新 <time datetime="2022-08-20T10:17:39.032Z" itemprop="dateUpdated">2022-08-20</time>
 
       </li>
       <li id="busuanzi_container_page_pv">
@@ -72,57 +72,7 @@
     <div class="article">
       <div class="content">
         
-        <h2 id="1-Vue3简介"><a href="#1-Vue3简介" class="headerlink" title="1.Vue3简介"></a>1.Vue3简介</h2><ul>
-<li>2020年9月18日，Vue.js发布3.0版本，代号：One Piece（海贼王）</li>
-<li>耗时2年多、<a target="_blank" rel="noopener" href="https://github.com/vuejs/vue-next/graphs/commit-activity">2600+次提交</a>、<a target="_blank" rel="noopener" href="https://github.com/vuejs/rfcs/tree/master/active-rfcs">30+个RFC</a>、<a target="_blank" rel="noopener" href="https://github.com/vuejs/vue-next/pulls?q=is:pr+is:merged+-author:app/dependabot-preview+">600+次PR</a>、<a target="_blank" rel="noopener" href="https://github.com/vuejs/vue-next/graphs/contributors">99位贡献者</a></li>
-<li>github上的tags地址：<a target="_blank" rel="noopener" href="https://github.com/vuejs/vue-next/releases/tag/v3.0.0">https://github.com/vuejs/vue-next/releases/tag/v3.0.0</a></li>
-</ul>
-<h2 id="2-Vue3带来了什么"><a href="#2-Vue3带来了什么" class="headerlink" title="2.Vue3带来了什么"></a>2.Vue3带来了什么</h2><h3 id="1-性能的提升"><a href="#1-性能的提升" class="headerlink" title="1.性能的提升"></a>1.性能的提升</h3><ul>
-<li><p>打包大小减少41%</p>
-</li>
-<li><p>初次渲染快55%, 更新渲染快133%</p>
-</li>
-<li><p>内存减少54%</p>
-<p>……</p>
-</li>
-</ul>
-<h3 id="2-源码的升级"><a href="#2-源码的升级" class="headerlink" title="2.源码的升级"></a>2.源码的升级</h3><ul>
-<li><p>使用Proxy代替defineProperty实现响应式</p>
-</li>
-<li><p>重写虚拟DOM的实现和Tree-Shaking</p>
-<p>……</p>
-</li>
-</ul>
-<h3 id="3-拥抱TypeScript"><a href="#3-拥抱TypeScript" class="headerlink" title="3.拥抱TypeScript"></a>3.拥抱TypeScript</h3><ul>
-<li>Vue3可以更好的支持TypeScript</li>
-</ul>
-<h3 id="4-新的特性"><a href="#4-新的特性" class="headerlink" title="4.新的特性"></a>4.新的特性</h3><ol>
-<li><p>Composition API（组合API）</p>
-<ul>
-<li>setup配置</li>
-<li>ref与reactive</li>
-<li>watch与watchEffect</li>
-<li>provide与inject</li>
-<li>……</li>
-</ul>
-</li>
-<li><p>新的内置组件</p>
-<ul>
-<li>Fragment</li>
-<li>Teleport</li>
-<li>Suspense</li>
-</ul>
-</li>
-<li><p>其他改变</p>
-<ul>
-<li>新的生命周期钩子</li>
-<li>data 选项应始终被声明为一个函数</li>
-<li>移除keyCode支持作为 v-on 的修饰符</li>
-<li>……</li>
-</ul>
-</li>
-</ol>
-<h1 id="一、创建Vue3-0工程"><a href="#一、创建Vue3-0工程" class="headerlink" title="一、创建Vue3.0工程"></a>一、创建Vue3.0工程</h1><h2 id="1-使用-vue-cli-创建"><a href="#1-使用-vue-cli-创建" class="headerlink" title="1.使用 vue-cli 创建"></a>1.使用 vue-cli 创建</h2><p>官方文档：<a target="_blank" rel="noopener" href="https://cli.vuejs.org/zh/guide/creating-a-project.html#vue-create">https://cli.vuejs.org/zh/guide/creating-a-project.html#vue-create</a></p>
+        <h1 id="一、创建Vue3-0工程"><a href="#一、创建Vue3-0工程" class="headerlink" title="一、创建Vue3.0工程"></a>一、创建Vue3.0工程</h1><h2 id="1-使用-vue-cli-创建"><a href="#1-使用-vue-cli-创建" class="headerlink" title="1.使用 vue-cli 创建"></a>1.使用 vue-cli 创建</h2><p>官方文档：<a target="_blank" rel="noopener" href="https://cli.vuejs.org/zh/guide/creating-a-project.html#vue-create">https://cli.vuejs.org/zh/guide/creating-a-project.html#vue-create</a></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## 查看@vue/cli版本，确保@vue/cli版本在4.5.0以上</span></span><br><span class="line">vue --version</span><br><span class="line"><span class="comment">## 安装或者升级你的@vue/cli</span></span><br><span class="line">npm install -g @vue/cli</span><br><span class="line"><span class="comment">## 创建</span></span><br><span class="line">vue create vue_test</span><br><span class="line"><span class="comment">## 启动</span></span><br><span class="line"><span class="built_in">cd</span> vue_test</span><br><span class="line">npm run serve</span><br></pre></td></tr></table></figure>
 
 <h2 id="2-使用-vite-创建"><a href="#2-使用-vite-创建" class="headerlink" title="2.使用 vite 创建"></a>2.使用 vite 创建</h2><p>官方文档：<a target="_blank" rel="noopener" href="https://v3.cn.vuejs.org/guide/installation.html#vite">https://v3.cn.vuejs.org/guide/installation.html#vite</a></p>
@@ -135,9 +85,7 @@
 <li>真正的按需编译，不再等待整个应用编译完成。</li>
 </ul>
 </li>
-<li>传统构建 与 vite构建对比图</li>
 </ul>
-<p><img src="https://cn.vitejs.dev/assets/bundler.37740380.png" style="width:500px;height:280px;float:left" /><img src="https://cn.vitejs.dev/assets/esm.3070012d.png" style="width:480px;height:280px" /></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## 创建工程</span></span><br><span class="line">npm init vite-app &lt;project-name&gt;</span><br><span class="line"><span class="comment">## 进入工程目录</span></span><br><span class="line"><span class="built_in">cd</span> &lt;project-name&gt;</span><br><span class="line"><span class="comment">## 安装依赖</span></span><br><span class="line">npm install</span><br><span class="line"><span class="comment">## 运行</span></span><br><span class="line">npm run dev</span><br></pre></td></tr></table></figure>
 
 
@@ -281,49 +229,16 @@
 </ul>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//watchEffect所指定的回调中用到的数据只要发生变化，则直接重新执行回调。</span></span><br><span class="line"><span class="title function_">watchEffect</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">const</span> x1 = sum.<span class="property">value</span></span><br><span class="line">    <span class="keyword">const</span> x2 = person.<span class="property">age</span></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;watchEffect配置的回调执行了&#x27;</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
 </ul>
-<h2 id="8-生命周期"><a href="#8-生命周期" class="headerlink" title="8.生命周期"></a>8.生命周期</h2><div style="border:1px solid black;width:380px;float:left;margin-right:20px;"><strong>vue2.x的生命周期</strong><img src="https://cn.vuejs.org/images/lifecycle.png" alt="lifecycle_2" style="zoom:33%;width:1200px" /></div><div style="border:1px solid black;width:510px;height:985px;float:left"><strong>vue3.0的生命周期</strong><img src="https://v3.cn.vuejs.org/images/lifecycle.svg" alt="lifecycle_2" style="zoom:33%;width:2500px" /></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<p>1</p>
+<h2 id="8-生命周期"><a href="#8-生命周期" class="headerlink" title="8.生命周期"></a>8.生命周期</h2><ul>
+<li><p>Vue3.0中可以继续使用Vue2.x中的生命周期钩子，但有有两个被更名：</p>
 <ul>
-<li>Vue3.0中可以继续使用Vue2.x中的生命周期钩子，但有有两个被更名：<ul>
 <li><code>beforeDestroy</code>改名为 <code>beforeUnmount</code></li>
 <li><code>destroyed</code>改名为 <code>unmounted</code></li>
 </ul>
 </li>
-<li>Vue3.0也提供了 Composition API 形式的生命周期钩子，与Vue2.x中钩子对应关系如下：<ul>
-<li><code>beforeCreate</code>&#x3D;&#x3D;&#x3D;&gt;<code>setup()</code></li>
+<li><p>Vue3.0也提供了 Composition API 形式的生命周期钩子，与Vue2.x中钩子对应关系如下：</p>
+<p><code>beforeCreate</code>&#x3D;&#x3D;&#x3D;&gt;<code>setup()</code></p>
+<ul>
 <li><code>created</code>&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&gt;<code>setup()</code></li>
 <li><code>beforeMount</code> &#x3D;&#x3D;&#x3D;&gt;<code>onBeforeMount</code></li>
 <li><code>mounted</code>&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&gt;<code>onMounted</code></li>
@@ -415,36 +330,7 @@
 <li>isProxy: 检查一个对象是否是由 <code>reactive</code> 或者 <code>readonly</code> 方法创建的代理</li>
 </ul>
 <h1 id="四、Composition-API-的优势"><a href="#四、Composition-API-的优势" class="headerlink" title="四、Composition API 的优势"></a>四、Composition API 的优势</h1><h2 id="1-Options-API-存在的问题"><a href="#1-Options-API-存在的问题" class="headerlink" title="1.Options API 存在的问题"></a>1.Options API 存在的问题</h2><p>使用传统OptionsAPI中，新增或者修改一个需求，就需要分别在data，methods，computed里修改 。</p>
-<div style="width:600px;height:370px;overflow:hidden;float:left">
-    <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f84e4e2c02424d9a99862ade0a2e4114~tplv-k3u1fbpfcp-watermark.image" style="width:600px;float:left" />
-</div>
-<div style="width:300px;height:370px;overflow:hidden;float:left">
-    <img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e5ac7e20d1784887a826f6360768a368~tplv-k3u1fbpfcp-watermark.image" style="zoom:50%;width:560px;left" /> 
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
 <h2 id="2-Composition-API-的优势"><a href="#2-Composition-API-的优势" class="headerlink" title="2.Composition API 的优势"></a>2.Composition API 的优势</h2><p>我们可以更加优雅的组织我们的代码，函数。让相关功能的代码更加有序的组织在一起。</p>
-<div style="width:500px;height:340px;overflow:hidden;float:left">
-    <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bc0be8211fc54b6c941c036791ba4efe~tplv-k3u1fbpfcp-watermark.image"style="height:360px"/>
-</div>
-<div style="width:430px;height:340px;overflow:hidden;float:left">
-    <img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6cc55165c0e34069a75fe36f8712eb80~tplv-k3u1fbpfcp-watermark.image"style="height:360px"/>
-</div>
-
-
-
-
-
 <h1 id="五、新的组件"><a href="#五、新的组件" class="headerlink" title="五、新的组件"></a>五、新的组件</h1><h2 id="1-Fragment"><a href="#1-Fragment" class="headerlink" title="1.Fragment"></a>1.Fragment</h2><ul>
 <li>在Vue2中: 组件必须有一个根标签</li>
 <li>在Vue3中: 组件可以没有根标签, 内部会将多个标签包含在一个Fragment虚拟元素中</li>
@@ -544,8 +430,6 @@
 <blockquote>
 <p>过滤器虽然这看起来很方便，但它需要一个自定义语法，打破大括号内表达式是 “只是 JavaScript” 的假设，这不仅有学习成本，而且有实现成本！建议用方法调用或计算属性去替换过滤器。</p>
 </blockquote>
-</li>
-<li><p>……</p>
 </li>
 </ul>
 
