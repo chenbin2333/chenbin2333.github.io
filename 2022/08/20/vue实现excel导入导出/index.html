@@ -10,15 +10,15 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="vue项目的excel的导入与导出在做人力资源管理的后台项目时，实现了excel表的导入导出功能。用到了vue-element-admin提供的框架链接地址我们只需要在自己的项目中封装改造即可。下面，来讲一下在项目中实现excel表的导入与导出的步骤。">
+  <meta name="description" content="vue项目的excel的导入与导出 在做人力资源管理的后台项目时，实现了excel表的导入导出功能。用到了vue-element-admin提供的框架链接地址我们只需要在自己的项目中封装改造即可下面，来讲一下在项目中实现excel表的导入与导出的步骤。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue实现excel导入导出">
 <meta property="og:url" content="http://example.com/2022/08/20/vue%E5%AE%9E%E7%8E%B0excel%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="vue项目的excel的导入与导出在做人力资源管理的后台项目时，实现了excel表的导入导出功能。用到了vue-element-admin提供的框架链接地址我们只需要在自己的项目中封装改造即可。下面，来讲一下在项目中实现excel表的导入与导出的步骤。">
+<meta property="og:description" content="vue项目的excel的导入与导出 在做人力资源管理的后台项目时，实现了excel表的导入导出功能。用到了vue-element-admin提供的框架链接地址我们只需要在自己的项目中封装改造即可下面，来讲一下在项目中实现excel表的导入与导出的步骤。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-08-20T15:37:36.000Z">
-<meta property="article:modified_time" content="2022-08-22T01:33:20.989Z">
+<meta property="article:modified_time" content="2022-08-22T01:59:47.832Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -264,7 +264,9 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h1 id="vue项目的excel的导入与导出"><a href="#vue项目的excel的导入与导出" class="headerlink" title="vue项目的excel的导入与导出"></a>vue项目的excel的导入与导出</h1><h2 id="在做人力资源管理的后台项目时，实现了excel表的导入导出功能。用到了vue-element-admin提供的框架链接地址我们只需要在自己的项目中封装改造即可。"><a href="#在做人力资源管理的后台项目时，实现了excel表的导入导出功能。用到了vue-element-admin提供的框架链接地址我们只需要在自己的项目中封装改造即可。" class="headerlink" title="在做人力资源管理的后台项目时，实现了excel表的导入导出功能。用到了vue-element-admin提供的框架链接地址我们只需要在自己的项目中封装改造即可。"></a>在做人力资源管理的后台项目时，实现了excel表的导入导出功能。用到了vue-element-admin提供的框架<a href="https://link.juejin.cn/?target=https://github.com/PanJiaChen/vue-element-admin/blob/master/src/components/UploadExcel/index.vue">链接地址</a>我们只需要在自己的项目中封装改造即可。</h2><p>下面，来讲一下在项目中实现excel表的导入与导出的步骤。</p>
+    <h1 id="vue项目的excel的导入与导出"><a href="#vue项目的excel的导入与导出" class="headerlink" title="vue项目的excel的导入与导出"></a>vue项目的excel的导入与导出</h1><ul>
+<li>在做人力资源管理的后台项目时，实现了excel表的导入导出功能。用到了vue-element-admin提供的框架<a href="https://link.juejin.cn/?target=https://github.com/PanJiaChen/vue-element-admin/blob/master/src/components/UploadExcel/index.vue">链接地址</a>我们只需要在自己的项目中封装改造即可下面，来讲一下在项目中实现excel表的导入与导出的步骤。</li>
+</ul>
 <span id="more"></span>
 
 <h2 id="一、excel的导入"><a href="#一、excel的导入" class="headerlink" title="一、excel的导入"></a>一、excel的导入</h2><h3 id="1-excel导入功能需要使用npm包xlsx，所以需要安装xlsx插件"><a href="#1-excel导入功能需要使用npm包xlsx，所以需要安装xlsx插件" class="headerlink" title="1.excel导入功能需要使用npm包xlsx，所以需要安装xlsx插件"></a>1.excel导入功能需要使用npm包xlsx，所以需要安装xlsx插件</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i xlsx</span><br></pre></td></tr></table></figure>
